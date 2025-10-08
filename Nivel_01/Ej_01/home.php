@@ -22,12 +22,7 @@
 </html>
 <?php
 
-
     echo "Your username: " . $_SESSION["username"] ."<br>";
     echo "Your password: " . $_SESSION["password"] ."<br>";
-    /*
-    if(isset($_POST["logout"])){
-        session_destroy();
-        header("Location : index.php");
-    }*/
+
 ?>

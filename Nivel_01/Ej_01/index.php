@@ -22,16 +22,20 @@
 </body>
 </html>
 <?php
-if(isset($_POST["login"])){
 
-    if(!empty($_POST["username"]) && !empty($_POST["password"])) {
+if(isset($_POST["login"]))
+{
+
+    if(!empty($_POST["username"]) && !empty($_POST["password"]))
+    {
          
         $_SESSION["username"] = $_POST["username"];
         $_SESSION["password"] = $_POST["password"];
 
         header("Location: home.php");
     }
-    else{
-        echo"Username or password missing out";
+    else
+    {
+        echo "Username or password missing out";
     }
 }
